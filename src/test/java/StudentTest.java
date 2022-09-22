@@ -12,11 +12,8 @@ public class StudentTest {
     int age = 21;
     DateTime dob = DateTime.parse("2001-01-01T00:00:00.000Z");
     int id;
-    String username;
-    List<Course> courses;
-    List<Module> modules;
 
-    Student student = new Student(name, age, dob, id, courses, modules);
+    Student student = new Student(name, age, dob, id);
 
     @Test
     public void testUsername(){

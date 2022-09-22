@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.joda.time.DateTime;
 
@@ -11,12 +12,12 @@ public class Lecturer {
     private String username;
     private List<Module> modules;
 
-    public Lecturer(String name, int age, DateTime dob, int id, List<Module> modules) {
+    public Lecturer(String name, int age, DateTime dob, int id) {
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.modules = modules;
+        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {
@@ -66,6 +67,10 @@ public class Lecturer {
 
     public void setModules(List<Module> modules) {
         this.modules = modules;
+    }
+
+    public void addModule(Module module){
+        this.modules.add(module);
     }
 
     @Override

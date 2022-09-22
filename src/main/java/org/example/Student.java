@@ -2,6 +2,7 @@ package org.example;
 
 import org.joda.time.DateTime;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -13,13 +14,13 @@ public class Student {
     private List<Course> courses;
     private List<Module> modules;
 
-    public Student(String name, int age, DateTime dob, int id, List<Course> courses, List<Module> modules) {
+    public Student(String name, int age, DateTime dob, int id) {
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.courses = courses;
-        this.modules = modules;
+        this.courses = new ArrayList<Course>();
+        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {
@@ -79,6 +80,12 @@ public class Student {
         this.modules = modules;
     }
 
+    public void addCourse(Course course){
+        this.courses.add(course);
+    }
+    public void addModule(Module module){
+        this.modules.add(module);
+    }
     @Override
     public String toString() {
         return "Student{" +

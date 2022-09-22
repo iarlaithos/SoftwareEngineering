@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Module {
@@ -8,10 +9,10 @@ public class Module {
     private List<Course> courses;
     private Lecturer lecturer;
 
-    public Module(String moduleName, List<Student> students, List<Course> courses, Lecturer lecturer) {
+    public Module(String moduleName, Lecturer lecturer) {
         this.moduleName = moduleName;
-        this.students = students;
-        this.courses = courses;
+        this.students = new ArrayList<Student>();
+        this.courses = new ArrayList<Course>();
         this.lecturer = lecturer;
     }
 
@@ -47,6 +48,12 @@ public class Module {
         this.lecturer = lecturer;
     }
 
+    public void addCourse(Course course){
+        this.courses.add(course);
+    }
+    public void addStudent(Student student){
+        this.students.add(student);
+    }
     @Override
     public String toString() {
         return "Module{" +
