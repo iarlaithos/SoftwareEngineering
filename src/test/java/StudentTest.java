@@ -16,7 +16,7 @@ public class StudentTest {
     List<Course> courses;
     List<Module> modules;
 
-    Student student = new Student(name, age, dob, id, username, courses, modules);
+    Student student = new Student(name, age, dob, id, courses, modules);
 
     @Test
     public void testUsername(){
