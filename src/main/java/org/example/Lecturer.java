@@ -11,12 +11,11 @@ public class Lecturer {
     private String username;
     private List<Module> modules;
 
-    public Lecturer(String name, int age, DateTime dob, int id, String username, List<Module> modules) {
+    public Lecturer(String name, int age, DateTime dob, int id, List<Module> modules) {
         this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.username = username;
         this.modules = modules;
     }
 
