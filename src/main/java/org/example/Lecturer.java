@@ -17,7 +17,6 @@ public class Lecturer {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {

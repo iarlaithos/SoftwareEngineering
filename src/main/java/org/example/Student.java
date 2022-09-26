@@ -19,8 +19,6 @@ public class Student {
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.courses = new ArrayList<Course>();
-        this.modules = new ArrayList<Module>();
     }
 
     public String getName() {

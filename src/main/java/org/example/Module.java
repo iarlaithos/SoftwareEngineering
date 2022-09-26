@@ -11,8 +11,6 @@ public class Module {
 
     public Module(String moduleName, Lecturer lecturer) {
         this.moduleName = moduleName;
-        this.students = new ArrayList<Student>();
-        this.courses = new ArrayList<Course>();
         this.lecturer = lecturer;
     }
 

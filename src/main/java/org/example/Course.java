@@ -14,8 +14,6 @@ public class Course {
 
     public Course(String courseName, DateTime startDate, DateTime endDate) {
         this.courseName = courseName;
-        this.modules = new ArrayList<Module>();
-        this.students = new ArrayList<Student>();
         this.startDate = startDate;
         this.endDate = endDate;
     }
