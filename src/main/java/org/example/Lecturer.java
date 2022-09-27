@@ -68,10 +68,6 @@ public class Lecturer {
         this.modules = modules;
     }
 
-    public void addModule(Module module){
-        this.modules.add(module);
-    }
-
     @Override
     public String toString() {
         return "Lecturer{" +

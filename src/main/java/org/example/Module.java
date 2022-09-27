@@ -46,12 +46,6 @@ public class Module {
         this.lecturer = lecturer;
     }
 
-    public void addCourse(Course course){
-        this.courses.add(course);
-    }
-    public void addStudent(Student student){
-        this.students.add(student);
-    }
     @Override
     public String toString() {
         return "Module{" +
